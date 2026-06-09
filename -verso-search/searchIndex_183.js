@@ -1,1 +1,0 @@
-window.docContents[183].resolve({"/Blueprint-Summary/#AINTLIB-___-An-Atlas-of-Number-Theory-in-Lean--Blueprint-Summary":{"contents":"\n\n","context":"AINTLIB — An Atlas of Number Theory in Lean","header":"Blueprint Summary","id":"/Blueprint-Summary/#AINTLIB-___-An-Atlas-of-Number-Theory-in-Lean--Blueprint-Summary"}});
