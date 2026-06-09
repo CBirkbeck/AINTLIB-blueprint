@@ -7556,16 +7556,18 @@ window.onload = () => {
                           <button type="button" class="bp_code_summary_preview_close bp_preview_panel_close" aria-label="Close Lean summary preview">Close</button></div>
                         <div class="bp_code_summary_preview_body bp_preview_panel_body"></div>
                         </aside></span></span><span class="bp_extra_slot bp_extra_slot_used_by"><div class="bp_used_by_wrap">
-                      <button type="button" class="bp_used_by_chip" title="Reverse dependencies for «padic-val-nat»" aria-expanded="false">used by 3</button><div class="bp_used_by_panel">
+                      <button type="button" class="bp_used_by_chip" title="Reverse dependencies for «padic-val-nat»" aria-expanded="false">used by 4</button><div class="bp_used_by_panel">
                         <div class="bp_used_by_panel_header">
                           <div class="bp_used_by_panel_title">
-                            Used by 3</div>
+                            Used by 4</div>
                           <div class="bp_used_by_panel_meta">
                             Hover a use site to preview it.</div>
                           </div>
                         <div class="bp_used_by_panel_body">
                           <ul class="bp_used_by_list">
-                            <li class="bp_used_by_item bp_used_by_item_active" data-bp-used-preview-id="bp-used-by--00ABpadic--val--nat-00BB--00ABpadic--val--rat-00BB" data-bp-used-preview-key="«padic-val-rat»--statement" data-bp-used-preview-title="Definition 5.4">
+                            <li class="bp_used_by_item bp_used_by_item_active" data-bp-used-preview-id="bp-used-by--00ABpadic--val--nat-00BB-bertrand" data-bp-used-preview-key="bertrand--statement" data-bp-used-preview-title="Theorem 2.13">
+                              <a class="bp_used_by_target" href="Analytic-Number-Theory/Bertrand___s-postulate/#--informal-preview-bertrand--statement"><span class="bp_used_by_target_title">Theorem 2.13</span><span class="bp_used_by_target_meta"><code>bertrand</code><span class="bp_used_by_axis_badge">proof</span></span></a></li>
+                            <li class="bp_used_by_item" data-bp-used-preview-id="bp-used-by--00ABpadic--val--nat-00BB--00ABpadic--val--rat-00BB" data-bp-used-preview-key="«padic-val-rat»--statement" data-bp-used-preview-title="Definition 5.4">
                               <a class="bp_used_by_target" href="p-adic-and-Adic-Spaces/p-adic-valuation-and-norm/#--informal-preview-_FLQQ_padic-val-rat_FLQQ_--statement"><span class="bp_used_by_target_title">Definition 5.4</span><span class="bp_used_by_target_meta"><code>«padic-val-rat»</code><span class="bp_used_by_axis_badge">statement</span></span></a></li>
                             <li class="bp_used_by_item" data-bp-used-preview-id="bp-used-by--00ABpadic--val--nat-00BB--00ABpadic--norm-00BB" data-bp-used-preview-key="«padic-norm»--statement" data-bp-used-preview-title="Definition 5.5">
                               <a class="bp_used_by_target" href="p-adic-and-Adic-Spaces/p-adic-valuation-and-norm/#--informal-preview-_FLQQ_padic-norm_FLQQ_--statement"><span class="bp_used_by_target_title">Definition 5.5</span><span class="bp_used_by_target_meta"><code>«padic-norm»</code><span class="bp_used_by_axis_badge">proof</span></span></a></li>
@@ -7577,7 +7579,7 @@ window.onload = () => {
                               <div class="bp_used_by_preview_label">
                                 Preview</div>
                               <div class="bp_used_by_preview_title">
-                                Definition 5.4</div>
+                                Theorem 2.13</div>
                               </div>
                             <div class="bp_used_by_preview_body">
                               <div class="bp_used_by_preview_message" data-bp-preview-message="loading">
@@ -7596,7 +7598,9 @@ window.onload = () => {
               <div class="bp_content bp_kind_definition_content definition_thmcontent">
                 <p>
                   For a prime <code class="bp_math inline">p</code> and a nonzero natural number <code class="bp_math inline">n</code>, the <strong><code class="bp_math inline">p</code>-adic valuation</strong> <code class="bp_math inline">v_p(n)</code> is the
-largest exponent <code class="bp_math inline">k \ge 0</code> such that <code class="bp_math inline">p^k \mid n</code>. By convention <code class="bp_math inline">v_p(0) = 0</code>.</p>
+largest exponent <code class="bp_math inline">k \ge 0</code> such that <code class="bp_math inline">p^k \mid n</code>. A largest such <code class="bp_math inline">k</code> exists because <code class="bp_math inline">n</code> has
+a finite prime factorisation (<span><span class="bp_inline_preview_ref" data-bp-preview-id="bp-uses--00ABfta--existence-00BB-statement" data-bp-preview-title="Theorem 1.3" data-bp-preview-key="«fta-existence»--statement" data-bp-preview-fallback-label="«fta-existence»"><a href="Elementary-Number-Theory/Primes-and-the-fundamental-theorem-of-arithmetic/#--informal-preview-_FLQQ_fta-existence_FLQQ_--statement" title="«fta-existence»">Theorem 1.3</a></span></span>), namely <code class="bp_math inline">k = v_p(n)</code> is the exponent of
+<code class="bp_math inline">p</code> in that factorisation. By convention <code class="bp_math inline">v_p(0) = 0</code>.</p>
                 </div>
               </div>
             <div class="bp_wrapper bp_code_panel_wrapper">
@@ -7625,7 +7629,7 @@ largest exponent <code class="bp_math inline">k \ge 0</code> such that <code cla
   <div class="bp_external_decl_signature_wrap">
     <div class="wide-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicValNat">padicValNat<span class="hover-info"><code>padicValNat (p n : ℕ) : ℕ</code><span class="sep"></span><code class="docstring">For `p ≠ 1`, the `p`-adic valuation of a natural `n ≠ 0` is the largest natural number `k` such
-that `p^k` divides `n`. If `n = 0` or `p = 1`, then `padicValNat p n` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2103">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="var token" data-binding="var-_uniq.2104">n<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+that `p^k` divides `n`. If `n = 0` or `p = 1`, then `padicValNat p n` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2442">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="var token" data-binding="var-_uniq.2443">n<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
@@ -7638,7 +7642,7 @@ implementation. Both use a fast arbitrary-precision arithmetic library (usually
 </code></span></span></pre></div>
     <div class="narrow-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicValNat">padicValNat<span class="hover-info"><code>padicValNat (p n : ℕ) : ℕ</code><span class="sep"></span><code class="docstring">For `p ≠ 1`, the `p`-adic valuation of a natural `n ≠ 0` is the largest natural number `k` such
-that `p^k` divides `n`. If `n = 0` or `p = 1`, then `padicValNat p n` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2103">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="var token" data-binding="var-_uniq.2104">n<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+that `p^k` divides `n`. If `n = 0` or `p = 1`, then `padicValNat p n` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2442">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="var token" data-binding="var-_uniq.2443">n<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
@@ -7675,7 +7679,7 @@ that `p^k` divides `n`. If `n = 0` or `p = 1`, then `padicValNat p n` defaults t
                           <div class="bp_code_summary_preview_title bp_preview_panel_title"></div>
                           <button type="button" class="bp_code_summary_preview_close bp_preview_panel_close" aria-label="Close Lean summary preview">Close</button></div>
                         <div class="bp_code_summary_preview_body bp_preview_panel_body"></div>
-                        </aside></span></span><span class="bp_extra_slot bp_extra_slot_used_by"><span class="bp_used_by_chip bp_used_by_chip_empty" title="No reverse dependencies">used by 0</span></span></div>
+                        </aside></span></span><span class="bp_extra_slot bp_extra_slot_used_by"><span class="bp_inline_preview_ref" data-bp-preview-id="bp-used-by--00ABpadic--val--rat-00BB--00ABpadic--norm-00BB" data-bp-preview-title="Definition 5.5" data-bp-preview-key="«padic-norm»--statement" data-bp-preview-fallback-label="«padic-norm»"><a class="bp_used_by_chip bp_code_link" href="p-adic-and-Adic-Spaces/p-adic-valuation-and-norm/#--informal-preview-_FLQQ_padic-norm_FLQQ_--statement" title="Reverse dependency: Definition 5.5">used by 1</a></span></span></div>
                 </div>
               <div class="bp_content bp_kind_definition_content definition_thmcontent">
                 <p>
@@ -7713,12 +7717,12 @@ is</p>
   <div class="bp_external_decl_signature_wrap">
     <div class="wide-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicValRat">padicValRat<span class="hover-info"><code>padicValRat (p : ℕ) (q : ℚ) : ℤ</code><span class="sep"></span><code class="docstring">`padicValRat` defines the valuation of a rational `q` to be the valuation of `q.num` minus the
-valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2890">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.3633">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
 [GMP](https://gmplib.org/)); at runtime, `Nat` values that are sufficiently small are unboxed.
-</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2891">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
+</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.3634">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
 </code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Int">ℤ<span class="hover-info"><code>Int : Type</code><span class="sep"></span><code class="docstring">The integers.
 
@@ -7731,12 +7735,12 @@ architectures).
 </code></span></span></pre></div>
     <div class="narrow-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicValRat">padicValRat<span class="hover-info"><code>padicValRat (p : ℕ) (q : ℚ) : ℤ</code><span class="sep"></span><code class="docstring">`padicValRat` defines the valuation of a rational `q` to be the valuation of `q.num` minus the
-valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2890">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.3633">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
 [GMP](https://gmplib.org/)); at runtime, `Nat` values that are sufficiently small are unboxed.
-</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.2891">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
+</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.3634">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
 </code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Int">ℤ<span class="hover-info"><code>Int : Type</code><span class="sep"></span><code class="docstring">The integers.
 
@@ -7774,16 +7778,18 @@ valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to 
                           <button type="button" class="bp_code_summary_preview_close bp_preview_panel_close" aria-label="Close Lean summary preview">Close</button></div>
                         <div class="bp_code_summary_preview_body bp_preview_panel_body"></div>
                         </aside></span></span><span class="bp_extra_slot bp_extra_slot_used_by"><div class="bp_used_by_wrap">
-                      <button type="button" class="bp_used_by_chip" title="Reverse dependencies for «padic-norm»" aria-expanded="false">used by 2</button><div class="bp_used_by_panel">
+                      <button type="button" class="bp_used_by_chip" title="Reverse dependencies for «padic-norm»" aria-expanded="false">used by 3</button><div class="bp_used_by_panel">
                         <div class="bp_used_by_panel_header">
                           <div class="bp_used_by_panel_title">
-                            Used by 2</div>
+                            Used by 3</div>
                           <div class="bp_used_by_panel_meta">
                             Hover a use site to preview it.</div>
                           </div>
                         <div class="bp_used_by_panel_body">
                           <ul class="bp_used_by_list">
-                            <li class="bp_used_by_item bp_used_by_item_active" data-bp-used-preview-id="bp-used-by--00ABpadic--norm-00BB--00ABqp--nonarchimedean-00BB" data-bp-used-preview-key="«qp-nonarchimedean»--statement" data-bp-used-preview-title="Lemma 5.8">
+                            <li class="bp_used_by_item bp_used_by_item_active" data-bp-used-preview-id="bp-used-by--00ABpadic--norm-00BB--00ABpadic--numbers-00BB" data-bp-used-preview-key="«padic-numbers»--statement" data-bp-used-preview-title="Definition 5.6">
+                              <a class="bp_used_by_target" href="p-adic-and-Adic-Spaces/The-p-adic-numbers-and-integers/#--informal-preview-_FLQQ_padic-numbers_FLQQ_--statement"><span class="bp_used_by_target_title">Definition 5.6</span><span class="bp_used_by_target_meta"><code>«padic-numbers»</code><span class="bp_used_by_axis_badge">statement</span></span></a></li>
+                            <li class="bp_used_by_item" data-bp-used-preview-id="bp-used-by--00ABpadic--norm-00BB--00ABqp--nonarchimedean-00BB" data-bp-used-preview-key="«qp-nonarchimedean»--statement" data-bp-used-preview-title="Lemma 5.8">
                               <a class="bp_used_by_target" href="p-adic-and-Adic-Spaces/Metric-and-analytic-properties/#--informal-preview-_FLQQ_qp-nonarchimedean_FLQQ_--statement"><span class="bp_used_by_target_title">Lemma 5.8</span><span class="bp_used_by_target_meta"><code>«qp-nonarchimedean»</code><span class="bp_used_by_axis_badge">proof</span></span></a></li>
                             <li class="bp_used_by_item" data-bp-used-preview-id="bp-used-by--00ABpadic--norm-00BB-ostrowski" data-bp-used-preview-key="ostrowski--statement" data-bp-used-preview-title="Theorem 5.14">
                               <a class="bp_used_by_target" href="p-adic-and-Adic-Spaces/Ostrowski___s-theorem/#--informal-preview-ostrowski--statement"><span class="bp_used_by_target_title">Theorem 5.14</span><span class="bp_used_by_target_meta"><code>ostrowski</code><span class="bp_used_by_axis_badge">proof</span></span></a></li>
@@ -7793,7 +7799,7 @@ valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to 
                               <div class="bp_used_by_preview_label">
                                 Preview</div>
                               <div class="bp_used_by_preview_title">
-                                Lemma 5.8</div>
+                                Definition 5.6</div>
                               </div>
                             <div class="bp_used_by_preview_body">
                               <div class="bp_used_by_preview_message" data-bp-preview-message="loading">
@@ -7845,24 +7851,24 @@ valuation of `q.den`. If `q = 0` or `p = 1`, then `padicValRat p q` defaults to 
   <div class="bp_external_decl_signature_wrap">
     <div class="wide-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicNorm">padicNorm<span class="hover-info"><code>padicNorm (p : ℕ) (q : ℚ) : ℚ</code><span class="sep"></span><code class="docstring">If `q ≠ 0`, the `p`-adic norm of a rational `q` is `p ^ (-padicValRat p q)`.
-If `q = 0`, the `p`-adic norm of `q` is `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4255">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+If `q = 0`, the `p`-adic norm of `q` is `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4998">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
 [GMP](https://gmplib.org/)); at runtime, `Nat` values that are sufficiently small are unboxed.
-</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4256">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
+</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4999">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
 </code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
 </code></span></span></pre></div>
     <div class="narrow-only">
       <pre class="bp_external_decl_signature signature hl lean block"><span class="keyword token">def</span> <span class="inter-text"></span><span class="const token" data-binding="const-padicNorm">padicNorm<span class="hover-info"><code>padicNorm (p : ℕ) (q : ℚ) : ℚ</code><span class="sep"></span><code class="docstring">If `q ≠ 0`, the `p`-adic norm of a rational `q` is `p ^ (-padicValRat p q)`.
-If `q = 0`, the `p`-adic norm of `q` is `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4255">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
+If `q = 0`, the `p`-adic norm of `q` is `0`. </code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4998">p<span class="hover-info"><code>ℕ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Nat">ℕ<span class="hover-info"><code>Nat : Type</code><span class="sep"></span><code class="docstring">The natural numbers, starting at zero.
 
 This type is special-cased by both the kernel and the compiler, and overridden with an efficient
 implementation. Both use a fast arbitrary-precision arithmetic library (usually
 [GMP](https://gmplib.org/)); at runtime, `Nat` values that are sufficiently small are unboxed.
-</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4256">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
+</code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.4999">q<span class="hover-info"><code>ℚ</code></span></span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
 </code></span></span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Rat">ℚ<span class="hover-info"><code>Rat : Type</code><span class="sep"></span><code class="docstring">Rational numbers, implemented as a pair of integers `num / den` such that the
 denominator is positive and the numerator and denominator are coprime.
@@ -7883,8 +7889,9 @@ If `q = 0`, the `p`-adic norm of `q` is `0`. </pre></div>
                 </div>
               <div class="bp_content bp_kind_proof_content proof_content">
                 <p>
-                  The key step is the multiplicativity <code class="bp_math inline">v_p(qr) = v_p(q) + v_p(r)</code>, from which
-<code class="bp_math inline">|qr|_p = |q|_p\,|r|_p</code>. The ultrametric inequality reduces to the fact that
+                  The norm is <code class="bp_math inline">|q|_p = p^{-v_p(q)}</code>, built from the rational <code class="bp_math inline">p</code>-adic valuation
+(<span><span class="bp_inline_preview_ref" data-bp-preview-id="bp-uses--00ABpadic--val--rat-00BB-statement" data-bp-preview-title="Definition 5.4" data-bp-preview-key="«padic-val-rat»--statement" data-bp-preview-fallback-label="«padic-val-rat»"><a href="p-adic-and-Adic-Spaces/p-adic-valuation-and-norm/#--informal-preview-_FLQQ_padic-val-rat_FLQQ_--statement" title="«padic-val-rat»">Definition 5.4</a></span></span>). The key step is the multiplicativity <code class="bp_math inline">v_p(qr) = v_p(q) + v_p(r)</code>,
+from which <code class="bp_math inline">|qr|_p = |q|_p\,|r|_p</code>. The ultrametric inequality reduces to the fact that
 <code class="bp_math inline">v_p(q + r) \ge \min(v_p(q), v_p(r))</code> (<span><span class="bp_inline_preview_ref" data-bp-preview-id="bp-uses--00ABpadic--val--nat-00BB-statement" data-bp-preview-title="Definition 5.3" data-bp-preview-key="«padic-val-nat»--statement" data-bp-preview-fallback-label="«padic-val-nat»"><a href="p-adic-and-Adic-Spaces/p-adic-valuation-and-norm/#--informal-preview-_FLQQ_padic-val-nat_FLQQ_--statement" title="«padic-val-nat»">Definition 5.3</a></span></span>), which in turn follows
 from the standard divisibility argument: if <code class="bp_math inline">p^k \mid q</code> and <code class="bp_math inline">p^k \mid r</code> then <code class="bp_math inline">p^k \mid q + r</code>.</p>
                 </div>

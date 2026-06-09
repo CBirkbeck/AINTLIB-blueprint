@@ -7819,6 +7819,14 @@ zero <code class="bp_math inline">(x_1, \dots, x_{2p-1}) \ne 0</code>. The indic
 <code class="bp_math inline">T</code> of size exactly <code class="bp_math inline">p</code> (from <code class="bp_math inline">f_1 = 0</code> using Fermat's little theorem) with
 <code class="bp_math inline">\sum_{i \in T} a_i = 0</code> (from <code class="bp_math inline">f_2 = 0</code>).</p>
                 <p>
+                  The prime case is exactly the threshold instance of an iterated sumset bound, and can
+equivalently be derived from the Cauchy–Davenport theorem (<span><span class="bp_inline_preview_ref" data-bp-preview-id="bp-uses--00ABcauchy--davenport-00BB-statement" data-bp-preview-title="Theorem 10.2" data-bp-preview-key="«cauchy-davenport»--statement" data-bp-preview-fallback-label="«cauchy-davenport»"><a href="Additive-and-Combinatorial-Number-Theory/Cauchy___Davenport/#--informal-preview-_FLQQ_cauchy-davenport_FLQQ_--statement" title="«cauchy-davenport»">Theorem 10.2</a></span></span>):
+applying <code class="bp_math inline">|A_1 + \dots + A_{2p-1}| \ge \min(p, \sum(|A_i| - 1) + 1)</code> to the two-element
+sets <code class="bp_math inline">A_i = \{0, a_i\}</code> forces a zero-sum of length <code class="bp_math inline">p</code> once the partial sums fill all of
+<code class="bp_math inline">\mathbb{Z}/p\mathbb{Z}</code>. The step <code class="bp_math inline">|T| = p</code> above uses Fermat's little theorem
+(<span><span class="bp_inline_preview_ref" data-bp-preview-id="bp-uses--00ABfermat--little-00BB-statement" data-bp-preview-title="Theorem 1.10" data-bp-preview-key="«fermat-little»--statement" data-bp-preview-fallback-label="«fermat-little»"><a href="Elementary-Number-Theory/Congruences___-the-theorems-of-Fermat___-Euler-and-Wilson/#--informal-preview-_FLQQ_fermat-little_FLQQ_--statement" title="«fermat-little»">Theorem 1.10</a></span></span>), since <code class="bp_math inline">f_1(x) = \sum x_i^{p-1}</code> counts, modulo <code class="bp_math inline">p</code>, the nonzero
+coordinates of a common zero.</p>
+                <p>
                   The general composite case follows by induction on the prime factorisation of <code class="bp_math inline">n</code>:
 for <code class="bp_math inline">n = mn'</code>, use the induction hypothesis on <code class="bp_math inline">n'</code> to extract <code class="bp_math inline">2m - 1</code> disjoint
 subsequences of length <code class="bp_math inline">n'</code> each summing to <code class="bp_math inline">0</code> modulo <code class="bp_math inline">n'</code>, then apply the induction
